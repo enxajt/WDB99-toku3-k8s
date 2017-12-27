@@ -4,6 +4,6 @@ metadata:
   name: hello-world
 spec:
   containers:
-    - image: asia.gcr.io/$PROJECT_ID/wdpress/hello-world
+    - image: asia.gcr.io/wdpress-190108/wdpress/hello-world
       imagePullPolicy: Always
       name: hello-world

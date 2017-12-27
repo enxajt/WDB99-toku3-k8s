@@ -11,9 +11,3 @@ curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
 
 # Update the package list and install the Cloud SDK
 sudo apt-get update && sudo apt-get install -y google-cloud-sdk kubectl
-
-gcloud container clusters delete wdpress
-gcloud container clusters create wdpress \
-    --machine-type=g1-small
-gcloud container clusters get-credentials wdpress
-gcloud container builds submit --config=cloudbuild.yaml .

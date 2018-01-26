@@ -1,5 +1,3 @@
-#!/bin/sh
-
 gcloud container clusters create wdpress \
     --machine-type=g1-small
 # kubectlがクラスタに接続できるように、k8sクラスタの認証情報をダウンロード
